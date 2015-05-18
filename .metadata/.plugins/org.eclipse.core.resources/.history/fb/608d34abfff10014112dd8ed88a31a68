@@ -1,0 +1,29 @@
+import org.teachingextensions.logo.Tortoise;
+public class methods {
+	public static void main(String[] args) {
+		new methods();
+	}
+methods(){
+	
+  square();	
+  }
+
+void square();
+{
+	for (int i = 0; i < 10; i++)
+	{
+		Tortoise.setSpeed(10);
+		Tortoise.move(100);
+		Tortoise.turn(90);
+		
+	}
+	
+}
+
+
+}
+	
+	
+	
+	
+

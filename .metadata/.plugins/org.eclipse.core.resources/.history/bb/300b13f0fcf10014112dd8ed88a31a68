@@ -1,0 +1,57 @@
+// Copyright Wintriss Technical Schools 2013
+import javax.swing.JOptionPane;
+
+import org.teachingextensions.logo.Tortoise;
+
+public class spiral {
+
+	public static void main(String[] args) {
+		// 3. Make a variable to hold the number of sides and set it to 0
+		int sides = 0;
+		// 4. Ask the user which spiral they would like (square, triangle, or pentagon)
+		
+		JOptionPane.showMessageDialog(null,"Would u like it to spiral in a square, triangle, or pentagon ?");
+		String input =JOptionPane.showInputDialog("Type it below");
+		 if ( input.equals("square"))
+		{
+			 sides = 90;
+		}
+		
+		else if ( input.equals("triangle"))
+		{
+			 sides = 120;
+		}
+		
+		else if ( input.equals("tyleragon"))
+		{
+			 sides = 3;
+		}
+		// 5. Set the number of sides depending on what the user entered (multiple lines of code)
+		else {
+			JOptionPane.showMessageDialog(null, "sorry i dont know how");
+			
+		}
+		
+		
+		
+		// 6. If the user enters something else, say "Sorry, I don't know how to draw a ..."
+	
+		
+		// 1. Make the Tortoise draw a square spiral shape. If you get stuck, use these instructions: http://bit.ly/YJUOkn
+		
+		for (int i = 0; i < 10000; i+= 10)
+		{
+			Tortoise.setSpeed(10);
+			Tortoise.move(100 + i);
+			Tortoise.turn(sides);
+			
+		}
+		
+		
+		// 2. Change your code to turn the square spiral into a triangle spiral
+	
+	}
+
+}
+
+
