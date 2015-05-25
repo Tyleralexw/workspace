@@ -1,0 +1,24 @@
+import java.util.Random;
+
+
+public class slotmachine {
+	public static void main(String[] args){
+		int x = new Random().nextInt(2);
+		int y = new Random().nextInt(2);
+		int z = new Random().nextInt(2);
+		System.out.println(x);
+		System.out.println(y);
+		System.out.println(z);
+		if(x == y){
+			if(y == z){
+				System.out.println("You Win");
+				
+			}
+		}
+		
+		
+	}
+	
+
+}
+
